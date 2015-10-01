@@ -6,14 +6,30 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		326E23B21BBCADBA00A9A6D1 /* Mogenerator */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 326E23B31BBCADBA00A9A6D1 /* Build configuration list for PBXAggregateTarget "Mogenerator" */;
+			buildPhases = (
+				326E23B61BBCADD000A9A6D1 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = Mogenerator;
+			productName = Mogenerator;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
+		321328F91BBCC4DA00FC9C68 /* Model in Resources */ = {isa = PBXBuildFile; fileRef = 321328F81BBCC4DA00FC9C68 /* Model */; };
 		326E238E1BBC96BB00A9A6D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326E238D1BBC96BB00A9A6D1 /* AppDelegate.swift */; };
 		326E23911BBC96BB00A9A6D1 /* ActiveQuestionTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 326E238F1BBC96BB00A9A6D1 /* ActiveQuestionTracker.xcdatamodeld */; };
-		326E23931BBC96BB00A9A6D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326E23921BBC96BB00A9A6D1 /* ViewController.swift */; };
+		326E23931BBC96BB00A9A6D1 /* SummaryPageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326E23921BBC96BB00A9A6D1 /* SummaryPageViewModel.swift */; };
 		326E23961BBC96BB00A9A6D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 326E23941BBC96BB00A9A6D1 /* Main.storyboard */; };
 		326E23981BBC96BB00A9A6D1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 326E23971BBC96BB00A9A6D1 /* Images.xcassets */; };
 		326E239B1BBC96BB00A9A6D1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 326E23991BBC96BB00A9A6D1 /* LaunchScreen.xib */; };
 		326E23A71BBC96BB00A9A6D1 /* ActiveQuestionTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326E23A61BBC96BB00A9A6D1 /* ActiveQuestionTrackerTests.swift */; };
+		326E23B11BBC992B00A9A6D1 /* SummaryPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326E23B01BBC992B00A9A6D1 /* SummaryPageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,17 +43,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		321328F81BBCC4DA00FC9C68 /* Model */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Model; sourceTree = "<group>"; };
 		326E23881BBC96BB00A9A6D1 /* ActiveQuestionTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ActiveQuestionTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		326E238C1BBC96BB00A9A6D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		326E238D1BBC96BB00A9A6D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		326E23901BBC96BB00A9A6D1 /* ActiveQuestionTracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ActiveQuestionTracker.xcdatamodel; sourceTree = "<group>"; };
-		326E23921BBC96BB00A9A6D1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		326E23921BBC96BB00A9A6D1 /* SummaryPageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryPageViewModel.swift; sourceTree = "<group>"; };
 		326E23951BBC96BB00A9A6D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		326E23971BBC96BB00A9A6D1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		326E239A1BBC96BB00A9A6D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		326E23A01BBC96BB00A9A6D1 /* ActiveQuestionTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ActiveQuestionTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		326E23A51BBC96BB00A9A6D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		326E23A61BBC96BB00A9A6D1 /* ActiveQuestionTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveQuestionTrackerTests.swift; sourceTree = "<group>"; };
+		326E23B01BBC992B00A9A6D1 /* SummaryPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SummaryPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,11 +98,13 @@
 			isa = PBXGroup;
 			children = (
 				326E238D1BBC96BB00A9A6D1 /* AppDelegate.swift */,
-				326E23921BBC96BB00A9A6D1 /* ViewController.swift */,
+				326E23921BBC96BB00A9A6D1 /* SummaryPageViewModel.swift */,
+				326E23B01BBC992B00A9A6D1 /* SummaryPageViewController.swift */,
 				326E23941BBC96BB00A9A6D1 /* Main.storyboard */,
 				326E23971BBC96BB00A9A6D1 /* Images.xcassets */,
 				326E23991BBC96BB00A9A6D1 /* LaunchScreen.xib */,
 				326E238F1BBC96BB00A9A6D1 /* ActiveQuestionTracker.xcdatamodeld */,
+				321328F81BBCC4DA00FC9C68 /* Model */,
 				326E238B1BBC96BB00A9A6D1 /* Supporting Files */,
 			);
 			path = ActiveQuestionTracker;
@@ -169,6 +189,9 @@
 						CreatedOnToolsVersion = 6.4;
 						TestTargetID = 326E23871BBC96BB00A9A6D1;
 					};
+					326E23B21BBCADBA00A9A6D1 = {
+						CreatedOnToolsVersion = 6.4;
+					};
 				};
 			};
 			buildConfigurationList = 326E23831BBC96BB00A9A6D1 /* Build configuration list for PBXProject "ActiveQuestionTracker" */;
@@ -186,6 +209,7 @@
 			targets = (
 				326E23871BBC96BB00A9A6D1 /* ActiveQuestionTracker */,
 				326E239F1BBC96BB00A9A6D1 /* ActiveQuestionTrackerTests */,
+				326E23B21BBCADBA00A9A6D1 /* Mogenerator */,
 			);
 		};
 /* End PBXProject section */
@@ -197,6 +221,7 @@
 			files = (
 				326E23961BBC96BB00A9A6D1 /* Main.storyboard in Resources */,
 				326E239B1BBC96BB00A9A6D1 /* LaunchScreen.xib in Resources */,
+				321328F91BBCC4DA00FC9C68 /* Model in Resources */,
 				326E23981BBC96BB00A9A6D1 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -210,12 +235,29 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		326E23B61BBCADD000A9A6D1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/mogenerator -m ActiveQuestionTracker/ActiveQuestionTracker.xcdatamodeld -O ActiveQuestionTracker/Model --swift --template-var arc=true";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		326E23841BBC96BB00A9A6D1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				326E23931BBC96BB00A9A6D1 /* ViewController.swift in Sources */,
+				326E23B11BBC992B00A9A6D1 /* SummaryPageViewController.swift in Sources */,
+				326E23931BBC96BB00A9A6D1 /* SummaryPageViewModel.swift in Sources */,
 				326E23911BBC96BB00A9A6D1 /* ActiveQuestionTracker.xcdatamodeld in Sources */,
 				326E238E1BBC96BB00A9A6D1 /* AppDelegate.swift in Sources */,
 			);
@@ -394,6 +436,20 @@
 			};
 			name = Release;
 		};
+		326E23B41BBCADBA00A9A6D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		326E23B51BBCADBA00A9A6D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -413,6 +469,7 @@
 				326E23AC1BBC96BB00A9A6D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		326E23AD1BBC96BB00A9A6D1 /* Build configuration list for PBXNativeTarget "ActiveQuestionTrackerTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +478,16 @@
 				326E23AF1BBC96BB00A9A6D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		326E23B31BBCADBA00A9A6D1 /* Build configuration list for PBXAggregateTarget "Mogenerator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				326E23B41BBCADBA00A9A6D1 /* Debug */,
+				326E23B51BBCADBA00A9A6D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
